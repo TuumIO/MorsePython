@@ -10,7 +10,9 @@ while 1==1:
   try:
     var = float(request)
     print(MorseNumbers[request.upper()])
-    break
   except ValueError:
-    print(MorseLetters[request.upper()])
+    try:
+      print(MorseLetters[request.upper()])
+    except KeyError:
+      print("Intente nuevamente, caracter no identificado")
   print("Listo!")
