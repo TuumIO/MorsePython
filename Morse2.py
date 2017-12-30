@@ -16,7 +16,7 @@ while 1==1:
     while i < len(request): 
       try:
         print(MorseLetters[request[i].upper()])
-        palabra = palabra + MorseLetters[request[i].upper()]
+        palabra.append(MorseLetters[request[i].upper()])
         i = i + 1
       except KeyError:
         print("Caracter no identificado")
