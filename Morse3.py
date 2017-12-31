@@ -19,16 +19,16 @@ def letra(letr):
     except KeyError:
        print("Intente nuevamente, caracter no identificado")
   
-while 1==1:
+while True:
   frase = []
   request = input("Frase: ")
   j = 0
   while j < len(request): 
     if request[j] != " ": 
       letra(request[j])
-      j = j + 1
+      j += 1
     else:
       frase.append(SpaceWords)
-      j = j + 1 
+      j += 1 
   print(frase)
   print("Listo!")
