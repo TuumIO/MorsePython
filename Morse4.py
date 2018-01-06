@@ -48,7 +48,7 @@ while True:
   print(frase)
 
   for palabr in frase:
-    for letr in palabra:
+    for letr in palabr:
       try:
         temp = int(letr)
         LedOn(temp)
