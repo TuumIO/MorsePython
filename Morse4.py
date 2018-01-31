@@ -4,7 +4,7 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-led = 21
+led = 16
 
 GPIO.setup(led, GPIO.OUT)
 
