@@ -8,8 +8,8 @@ led = 16
 
 GPIO.setup(led, GPIO.OUT)
 
-Dot = 0.75
-Line = 3*Dot
+Dot = 1
+Line = 2*Dot
 Space = Dot
 SpaceLetters = ["###"]
 SpaceWords = ["#####"]
@@ -55,7 +55,7 @@ while True:
         time.sleep(Dot)
       except ValueError:
         if letr == "###":
-          time.sleep(3*Dot)
+          time.sleep(Line)
         elif letr == "#####":
           time.sleep(5*Dot)
     
