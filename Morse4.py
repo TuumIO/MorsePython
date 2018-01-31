@@ -8,7 +8,7 @@ led = 16
 
 GPIO.setup(led, GPIO.OUT)
 
-Dot = 1
+Dot = 0.75
 Line = 3*Dot
 Space = Dot
 SpaceLetters = ["###"]
