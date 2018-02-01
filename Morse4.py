@@ -22,9 +22,9 @@ def LedOn(val):
     GPIO.output(led,0)
 
 def letra(letr):
-  result = []
+  #result = []
   try:
-    var = float(request)
+    var = float(letr)
     frase.append(MorseNumbers[letr.upper()])
     frase.append(SpaceLetters)
   except ValueError:
